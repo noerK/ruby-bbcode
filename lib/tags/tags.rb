@@ -67,10 +67,9 @@ module RubyBBCode
         :tag_param => /(.*)/,
         :tag_param_tokens => [{:token => :author, :prefix => '<strong>', :postfix => ' wrote:</strong>'}]},
       :code => {
-        :html_open => '<div class="code">%author%', :html_close => '</div>',
+        :html_open => '<div class="code">', :html_close => '</div>',
         :description => 'A code Snippet',
-        :example => '[code]BBCode is great[/code]',
-        :allow_tag_param => true, :allow_tag_param_between => false,        
+        :example => '[code]BBCode is great[/code]',      
       :size => {
         :html_open => '<span style="font-size: %size%px;">', :html_close => '</span>',
         :description => 'Change the size of the text',
