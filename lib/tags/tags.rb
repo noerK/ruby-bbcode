@@ -69,7 +69,7 @@ module RubyBBCode
       :code => {
         :html_open => '<div class="code">', :html_close => '</div>',
         :description => 'A code Snippet',
-        :example => '[code]BBCode is great[/code]',      
+        :example => '[code]BBCode is great[/code]'},      
       :size => {
         :html_open => '<span style="font-size: %size%px;">', :html_close => '</span>',
         :description => 'Change the size of the text',
