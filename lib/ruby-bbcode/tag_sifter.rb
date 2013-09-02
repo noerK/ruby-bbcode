@@ -24,7 +24,7 @@ module RubyBBCode
         @ti = TagInfo.new(tag_info, @dictionary)
         
         @ti.handle_unregistered_tags_as_text  # if the tag isn't in the @dictionary list, then treat it as text
-        return if !valid_element?
+        @ti.handle_unregistered_tags_as_text(true) if !valid_element?
         
         case @ti.type   # Validation of tag succeeded, add to @bbtree.tags_list and/or bbtree
         when :opening_tag

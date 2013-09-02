@@ -44,8 +44,8 @@ module RubyBBCode
       return :closing_tag if element_is_closing_tag?
     end
     
-    def handle_unregistered_tags_as_text
-      if element_is_tag? and tag_missing_from_tag_dictionary?
+    def handle_unregistered_tags_as_text(force=false)
+      if element_is_tag? && tag_missing_from_tag_dictionary? || force
         # Handle as text from now on!
         self[:is_tag] = false
         self[:closing_tag] = false
