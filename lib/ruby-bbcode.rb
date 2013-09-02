@@ -24,11 +24,11 @@ module RubyBBCode
 
     @tag_sifter.process_text
 
-    if @tag_sifter.invalid?
-      raise @tag_sifter.errors.join(', ')   # We cannot convert to HTML if the BBCode is not valid!
-    else
+    #if @tag_sifter.invalid?
+      #raise @tag_sifter.errors.join(', ')   # We cannot convert to HTML if the BBCode is not valid!
+    #else
       @tag_sifter.bbtree.to_html(use_tags)
-    end
+    #end
 
   end
 
