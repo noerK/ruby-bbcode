@@ -37,7 +37,7 @@ module RubyBBCode
     @tag_sifter = TagSifter.new(text, @@tags.merge(additional_tags))
 
     @tag_sifter.process_text
-    return @tag_sifter.errors if @tag_sifter.invalid?
+    #return @tag_sifter.errors if @tag_sifter.invalid?
     true
   end
 
