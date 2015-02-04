@@ -71,7 +71,7 @@ module RubyBBCode
         :description => 'A code Snippet',
         :example => '[code]BBCode is great[/code]'},      
       :size => {
-        :html_open => '<span style="font-size: %size%px;">', :html_close => '</span>',
+        :html_open => '<font size="%size%;">', :html_close => '</font>',
         :description => 'Change the size of the text',
         :example => '[size=32]This is 32px[/size]',
         :allow_tag_param => true, :allow_tag_param_between => false,
